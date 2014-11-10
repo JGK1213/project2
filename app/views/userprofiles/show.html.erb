@@ -1,13 +1,16 @@
-<h1>Yay!!</h1>
+<div id="container-fluid">
+	<div class="well well-lg">
+<h1 class="text-center">Yay!!</h1>
 
 <br>
-<h2>Here's the event you just completed!</h2>
-<h3><show><%= @event.event %></show></h3>
+<h2 class="text-center">Here's the event you just completed:</h2>
+<h3 class="text-center"><show><%= @event.event %></show></h3>
 <br>
-<h3><%= link_to "Got some time? choose another one!", userprofiles_path %></h3>
+<h3 class="text-center"><%= link_to "Got some time? choose another one!", userprofiles_path %></h3>
 
 
-<br>
+</div>
+</div>
 
 <!--<%= link_to "Edit Event", edit_userprofile_path(@event) %>-->
 

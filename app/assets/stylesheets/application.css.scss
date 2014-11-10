@@ -13,3 +13,27 @@
  */
 
 @import 'bootstrap';
+
+#container-fluid{
+	margin: 0 auto;
+	opacity: 0.94;
+
+}
+
+.center {
+		width:1200px;
+		max-width:1200px;
+	margin: 0 auto;
+	opacity: 0.94;
+   
+
+}
+
+body, html {
+	background-image: url('bg.jpg');
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 1920px;
+
+}

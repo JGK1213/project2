@@ -1,11 +1,10 @@
+<div id="container-fluid">
+	<div class="well well-lg">
 <h1>New Event</h1>
 
 <%= form_for @event do |e| %>
 
-	<div class="field">
-		<%= e.label :name %><br>
-		<%= e.text_field :name %> 
-	</div>
+	
 	<div class="field">
 		<%= e.label :event %><br>
 		<%= e.text_area :event %>
@@ -15,9 +14,14 @@
 		<%= e.text_area :digit %>
 	</div>
 	<div class="actions">
+		<br>
 		<%= e.submit %>
+
 	</div>
 	<% end %>
+	<br>
 
 	<%= link_to 'View User Profiles', userprofiles_path %>
 	<%= link_to 'View complete Events database', events_path %>
+</div>
+</div>

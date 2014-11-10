@@ -49,3 +49,5 @@ gem 'bootstrap-sass', '~> 3.2.0'
 gem 'bcrypt', '~> 3.1.7'
 
 gem 'rails_12factor'
+
+gem 'bower-rails'

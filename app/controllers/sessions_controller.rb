@@ -5,7 +5,9 @@ skip_before_filter :authorize
 
     def create
         admin = User.where({ 
-            _id: "546053093132640002010000", email: "admin@admin.com", password_digest: "$2a$10$TyYUk5N7Yk0DvPCZm3mLHewTalnSx.zNOMxguUo8D3S/9dLMtg3O6" }).first
+            _id: "546062cf4a616316b7010000",
+            email: "admin@admin.com",
+            password_digest: "$2a$10$Fi7up7mvWNFHpCAtPSv62uSdWjc39PwY7pq96Sa/Wy.HBXIc.ei6q" }).first
         user = User.where(email: params[:email]).first
         # first make sure we actually find a user
         # then see if user authenticates
