@@ -4,8 +4,8 @@
 <table>
 <thead>
   <tr>
-   <th>Events</th>
-   <th>Time of Event</th>
+   <th>We can use some positivity in our lives! Here's a few suggestions!</th>
+   
   </tr>
 </thead>
 <% array = Array(0...@events.length) %>
@@ -19,14 +19,15 @@
     <% if event.digit == i %>
       <tr>
       <td><%= link_to event.event, userprofile_path(event) %></td>
-      <td><%= event.c_at %></td>
+      <!-- <td><%= event.c_at %></td>
       <td><%= event.u_at %></td>
-     <!--  <td><%= link_to "Add comments or description", new_userprofile_path(event) %></td> -->
+      <td><%= link_to "Add comments or description", new_userprofile_path(event) %></td> -->
       </tr>
     <% end %>
   <% end %>
 <% end %>
-</table>
+</table><br>
+<%= link_to "Can't decide? Click me!!", userprofiles_path %>
 
 <!-- <ul>
   <% @events.each do |show| %>

@@ -1,8 +1,12 @@
-<h1><%= @event.event %></h1>
+<h1>Yay!!</h1>
 
-<p>Here is the most recently clicked event:<p><br>
-<show><%= @event.event %></show>
-<show><%= @event.u_at %></show>
+<br>
+<h2>Here's the event you just completed!</h2>
+<h3><show><%= @event.event %></show></h3>
+<br>
+<h3><%= link_to "Got some time? choose another one!", userprofiles_path %></h3>
+
+
 <br>
 
 <!--<%= link_to "Edit Event", edit_userprofile_path(@event) %>-->
