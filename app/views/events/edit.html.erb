@@ -1,0 +1,23 @@
+<h1>Edit User's profile events list</h1>
+
+<%= form_for @event do |e| %>
+
+	<div class="field">
+		<%= e.label :name %><br>
+		<%= e.text_field :name %> 
+	</div>
+	<div class="field">
+		<%= e.label :event %><br>
+		<%= e.text_area :event %>
+	</div>
+	<div class="field">
+		<%= e.label :digit %><br>
+		<%= e.text_area :digit %>
+	</div>
+	<div class="actions">
+		<%= e.submit %>
+	</div>
+	<% end %>
+
+
+<%= link_to "Take me back to the complete events", events_path %>

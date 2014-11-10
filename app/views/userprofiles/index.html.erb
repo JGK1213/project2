@@ -1,0 +1,38 @@
+<h1> here is userprofiles/index.html.erb</h1>
+<h2>User's Name</h2><br>
+
+<table>
+<thead>
+  <tr>
+   <th>Events</th>
+   <th>Time of Event</th>
+  </tr>
+</thead>
+<% array = Array(0...@events.length) %>
+  
+<% array.shuffle! %>
+<% arr1 = array[0..4] %>
+
+<% arr1.each do |i| %>
+
+  <%@events.each do |event| %>
+    <% if event.digit == i %>
+      <tr>
+      <td><%= link_to event.event, userprofile_path(event) %></td>
+      <td><%= event.c_at %></td>
+      <td><%= event.u_at %></td>
+     <!--  <td><%= link_to "Add comments or description", new_userprofile_path(event) %></td> -->
+      </tr>
+    <% end %>
+  <% end %>
+<% end %>
+</table>
+
+<!-- <ul>
+  <% @events.each do |show| %>
+    <li>
+     <%= show.event %>
+    <%= link_to show.event, userprofiles_path(show) %>
+    </li>
+  <% end %>
+</ul> -->

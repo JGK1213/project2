@@ -1,0 +1,15 @@
+<h1>Edit your event description!</h1>
+<h1><%= @event.event %></h1>
+	
+<%= form_for @event do |f| %>
+	Comments: <%= f.text_field :comment, placeholder: "Change me here" %><br><br>
+	Attach an Image to the event:<br><br>
+	<%= text_area(:message, "comments here") %>
+	<%= f.submit "Event Completed!" %>
+
+<% end %>
+<br><br>
+
+
+<%= link_to "Take me to the finished event", userprofile_path(@userprofile) %>
+
